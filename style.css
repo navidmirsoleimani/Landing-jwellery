@@ -1,0 +1,294 @@
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+a:active {
+    background-color: unset;
+}
+header{
+    direction: rtl;
+}
+#header{
+    text-align: center;
+    background-color: #dda853ee;
+    padding: 5px 0px 10px 0px;
+
+}
+#gold-text{
+    border-radius: 5px;
+    padding: 3px 40px;
+    color: #0b2831;
+}
+#gold-price{
+}
+
+
+/* search sec */
+
+#search-sec{
+    padding: 10px 0px;
+    background-color: #f8f2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-sec i{
+    padding: 7px;
+    color: #16404D;
+    border-radius: 50%;
+    border: 1px solid #16404D;
+}
+#search-input{
+    direction: rtl;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 16px;
+    border: 1px solid #16404D;
+    outline: none;
+    margin-left: 3px;
+    width: 220px;
+}
+
+/* banner */
+
+#banner-section {
+    position: relative;
+    background-color: #f2cc8f;
+}
+
+#banner-sec{
+    text-align: center;
+    padding: 10px 0px;
+}
+.banner-img{
+    width: 260px;
+    height: 130px;
+    border-radius: 10px;
+    display: none;
+}
+.active {
+    width: 260px;
+    height: 130px;
+    border-radius: 10px;
+    display: unset;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+#banner-previous {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    cursor: pointer;
+    color: #16404D;
+}
+#banner-next {
+    position: absolute;
+    top: 45%;
+    right: 3%;
+    cursor: pointer;
+    color: #16404D;
+}
+
+/* category section */
+
+.more-cat {
+    font-size: .7em;
+    color: #666;
+    cursor: pointer;
+}
+
+.active-more-cat {
+    color: blue;
+}
+
+
+#categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+#category-texts {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 15px 0px 15px;
+}
+#category-text {
+}
+#category-cards {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+    margin: 0px auto;
+
+}
+.category-card {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+.more-category {
+    display: none;
+}
+#more-sec i{
+    font-size: .7em;
+    display: none;
+}
+
+.category-card img {
+   background-color: #16404D;
+   padding: 1px;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+}
+.category-card span {
+    font-size: .7em;
+}
+
+/* navigation */
+
+#navigation {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    bottom: 0px;
+    width: 95%;
+    left: 2.5%;
+    height: 50px;
+    background-color: #16404D    ;
+    color: #DDA853;
+}
+.navigator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 30px;
+}
+.navigator-active {
+    background-color: #f2cc8f;
+    color: #16404D;
+}
+.navigator i {
+    font-size: 1.2em;
+    margin-bottom: 3px;
+    color: #DDA853;
+}
+.navigator span {
+    font-size: .7em;
+}
+.navigator-active i{
+    color: #16404D;
+}
+.navigator-active span{
+}
+#navigator-card {
+    position: relative;
+}
+#card-count {
+    position: absolute;
+    font-size: .7em;
+    top: 10px;
+    right: 20%;
+}
+
+
+
+/* footer */
+
+#footer {
+    border-top: 2px solid #0b2831;
+    margin-bottom: 60px;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+}
+#footer a {
+    padding-bottom: 5px;
+    text-decoration: underline;
+    direction: rtl;
+}
+#footer i {
+    color: black;
+}
+#about-us {
+    padding: 15px;
+    border-bottom: 1px solid #0b2831;
+    background-color: #16404dc4;
+    color: whitesmoke;
+}
+#about-us p {}
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px ;
+    row-gap: 5px;
+    background-color: #f2cc8faf;
+
+}
+#address , #phone , #email {
+    direction: ltr;
+    color: black;
+    display: flex;
+    column-gap: 15px;
+}
